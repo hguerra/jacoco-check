@@ -307,5 +307,5 @@ issues:
         - wrapcheck
     - path: "cmd/root.go"
       linters: [gochecknoglobals, gochecknoinits, godot]
-    - path: "cmd/serve.go"
+    - path: "cmd/check.go"
       linters: [gochecknoglobals, gochecknoinits, godot]

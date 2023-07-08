@@ -12,7 +12,6 @@ tasks:
       - GOBIN={{.BIN_DIR}} go install github.com/go-task/task/v3/cmd/task@v3.27.1
       - GOBIN={{.BIN_DIR}} go install github.com/spf13/cobra-cli@v1.3.0
       - GOBIN={{.BIN_DIR}} go install gotest.tools/gotestsum@v1.10.0
-      - GOBIN={{.BIN_DIR}} go install github.com/cosmtrek/air@v1.44.0
       - GOBIN={{.BIN_DIR}} go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.53.3
 
   install:
