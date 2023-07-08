@@ -56,7 +56,7 @@ tasks:
 
   run:
     cmds:
-      - go run main.go serve
+      - go run main.go check
     env:
       APP_ENV: development
 
