@@ -55,9 +55,12 @@ tasks:
 
   run:
     cmds:
-      - go run main.go check
+      - go run main.go check -x test/data/jacoco.xml -f {{.INCLUSIONS}} myargs
     env:
       APP_ENV: development
+    vars:
+      INCLUSIONS:
+        sh: cat test/data/INCLUSIONS.txt
 
   run_docker:
     cmds:

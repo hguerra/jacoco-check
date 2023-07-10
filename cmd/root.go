@@ -22,17 +22,12 @@ THE SOFTWARE.
 package cmd
 
 import (
-	"log"
 	"os"
 
-	"github.com/hguerra/jacoco-check/pkg/config"
 	"github.com/spf13/cobra"
 )
 
-var (
-	cfgFile string
-	cfg     *config.Config
-)
+var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -74,9 +69,4 @@ func init() {
 
 // initConfig reads in config file and ENV variables if set.
 func initConfig() {
-	c, err := config.NewConfig(cfgFile, "./configs")
-	if err != nil {
-		log.Fatal(err)
-	}
-	cfg = c
 }

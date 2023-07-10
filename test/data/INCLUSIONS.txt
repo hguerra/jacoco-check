@@ -1,0 +1,1 @@
+.editorconfig,.gitignore,.tool-versions,README.md,Taskfile.yml,bitbucket-pipelines.yml,src/test/java/br/com/company/crm/infra/validator/ObjectValidatorTest.kt,test/scripts/scenario-core-01.js,

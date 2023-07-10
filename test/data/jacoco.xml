@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd">
+<report name="my-project">
+  <sessioninfo id="t-n421-2943cdf5" start="1688780717695" dump="1688780720205"/>
+  <package name="br/com/company/crm/infra/validator">
+    <class name="br/com/company/crm/infra/validator/ObjectViolationWebException" sourcefilename="ObjectValidator.kt">
+      <method name="&lt;init&gt;" desc="(Lbr/com/company/crm/infra/validator/Violation;)V" line="25">
+        <counter type="INSTRUCTION" missed="0" covered="8"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;init&gt;" desc="([Ljava/lang/String;)V" line="26">
+        <counter type="INSTRUCTION" missed="0" covered="11"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="19"/>
+      <counter type="LINE" missed="0" covered="2"/>
+      <counter type="COMPLEXITY" missed="0" covered="2"/>
+      <counter type="METHOD" missed="0" covered="2"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="br/com/company/crm/infra/validator/ObjectValidatorKt" sourcefilename="ObjectValidator.kt">
+      <method name="newViolation" desc="(Ljava/util/Set;)Lbr/com/company/crm/infra/validator/Violation;" line="14">
+        <counter type="INSTRUCTION" missed="0" covered="18"/>
+        <counter type="LINE" missed="0" covered="2"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="newViolationResponse" desc="(Lbr/com/company/crm/infra/validator/Violation;)Ljavax/ws/rs/core/Response;" line="19">
+        <counter type="INSTRUCTION" missed="0" covered="11"/>
+        <counter type="LINE" missed="0" covered="4"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="29"/>
+      <counter type="LINE" missed="0" covered="6"/>
+      <counter type="COMPLEXITY" missed="0" covered="2"/>
+      <counter type="METHOD" missed="0" covered="2"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="br/com/company/crm/infra/validator/Violation" sourcefilename="ObjectValidator.kt">
+      <method name="&lt;init&gt;" desc="(Ljava/util/List;)V" line="11">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getErrors" desc="()Ljava/util/List;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="3" covered="9"/>
+      <counter type="LINE" missed="0" covered="1"/>
+      <counter type="COMPLEXITY" missed="1" covered="1"/>
+      <counter type="METHOD" missed="1" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="br/com/company/crm/infra/validator/ObjectValidator" sourcefilename="ObjectValidator.kt">
+      <method name="validate" desc="(Ljava/lang/Object;)V" line="41">
+        <counter type="INSTRUCTION" missed="0" covered="40"/>
+        <counter type="BRANCH" missed="0" covered="6"/>
+        <counter type="LINE" missed="0" covered="6"/>
+        <counter type="COMPLEXITY" missed="0" covered="4"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="required" desc="(Ljava/lang/String;Ljava/lang/Object;)V" line="54">
+        <counter type="INSTRUCTION" missed="0" covered="39"/>
+        <counter type="BRANCH" missed="1" covered="5"/>
+        <counter type="LINE" missed="0" covered="5"/>
+        <counter type="COMPLEXITY" missed="1" covered="3"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="31">
+        <counter type="INSTRUCTION" missed="0" covered="20"/>
+        <counter type="LINE" missed="0" covered="6"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="99"/>
+      <counter type="BRANCH" missed="1" covered="11"/>
+      <counter type="LINE" missed="0" covered="17"/>
+      <counter type="COMPLEXITY" missed="1" covered="8"/>
+      <counter type="METHOD" missed="0" covered="3"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="ObjectValidator.kt">
+      <line nr="11" mi="3" ci="6" mb="0" cb="0"/>
+      <line nr="14" mi="0" ci="13" mb="0" cb="0"/>
+      <line nr="15" mi="0" ci="5" mb="0" cb="0"/>
+      <line nr="19" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="20" mi="0" ci="2" mb="0" cb="0"/>
+      <line nr="21" mi="0" ci="2" mb="0" cb="0"/>
+      <line nr="22" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="25" mi="0" ci="5" mb="0" cb="0"/>
+      <line nr="26" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="31" mi="0" ci="1" mb="0" cb="0"/>
+      <line nr="34" mi="0" ci="2" mb="0" cb="0"/>
+      <line nr="35" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="36" mi="0" ci="2" mb="0" cb="0"/>
+      <line nr="37" mi="0" ci="1" mb="0" cb="0"/>
+      <line nr="38" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="41" mi="0" ci="2" mb="0" cb="2"/>
+      <line nr="42" mi="0" ci="12" mb="0" cb="0"/>
+      <line nr="44" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="45" mi="0" ci="11" mb="0" cb="4"/>
+      <line nr="46" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="48" mi="0" ci="1" mb="0" cb="0"/>
+      <line nr="54" mi="0" ci="2" mb="0" cb="2"/>
+      <line nr="55" mi="0" ci="13" mb="0" cb="0"/>
+      <line nr="57" mi="0" ci="7" mb="1" cb="3"/>
+      <line nr="58" mi="0" ci="13" mb="0" cb="0"/>
+      <line nr="60" mi="0" ci="1" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="3" covered="156"/>
+      <counter type="BRANCH" missed="1" covered="11"/>
+      <counter type="LINE" missed="0" covered="26"/>
+      <counter type="COMPLEXITY" missed="2" covered="13"/>
+      <counter type="METHOD" missed="1" covered="8"/>
+      <counter type="CLASS" missed="0" covered="4"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="3" covered="156"/>
+    <counter type="BRANCH" missed="1" covered="11"/>
+    <counter type="LINE" missed="0" covered="26"/>
+    <counter type="COMPLEXITY" missed="2" covered="13"/>
+    <counter type="METHOD" missed="1" covered="8"/>
+    <counter type="CLASS" missed="0" covered="4"/>
+  </package>
+  <package name="br/com/company/crm/infra/health">
+    <class name="br/com/company/crm/infra/health/HealthJersey" sourcefilename="HealthJersey.java">
+      <method name="&lt;init&gt;" desc="()V" line="17">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="check" desc="()Ljavax/ws/rs/core/Response;" line="21">
+        <counter type="INSTRUCTION" missed="10" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="13" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="2" covered="0"/>
+      <counter type="METHOD" missed="2" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <sourcefile name="HealthJersey.java">
+      <line nr="17" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="21" mi="10" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="13" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="2" covered="0"/>
+      <counter type="METHOD" missed="2" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="13" covered="0"/>
+    <counter type="LINE" missed="2" covered="0"/>
+    <counter type="COMPLEXITY" missed="2" covered="0"/>
+    <counter type="METHOD" missed="2" covered="0"/>
+    <counter type="CLASS" missed="1" covered="0"/>
+  </package>
+  <package name="br/com/company/crm/infra/metrics">
+    <class name="br/com/company/crm/infra/metrics/MetricsJersey" sourcefilename="MetricsJersey.kt">
+      <method name="&lt;init&gt;" desc="()V" line="14">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="2" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="check" desc="()Ljavax/ws/rs/core/Response;" line="26">
+        <counter type="INSTRUCTION" missed="69" covered="0"/>
+        <counter type="LINE" missed="11" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="gae" desc="()Lorg/json/JSONObject;" line="46">
+        <counter type="INSTRUCTION" missed="67" covered="0"/>
+        <counter type="LINE" missed="11" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="139" covered="0"/>
+      <counter type="LINE" missed="24" covered="0"/>
+      <counter type="COMPLEXITY" missed="3" covered="0"/>
+      <counter type="METHOD" missed="3" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="br/com/company/crm/infra/metrics/MetricsJersey$Companion" sourcefilename="MetricsJersey.kt"/>
+    <sourcefile name="MetricsJersey.kt">
+      <line nr="14" mi="2" ci="0" mb="0" cb="0"/>
+      <line nr="16" mi="1" ci="0" mb="0" cb="0"/>
+      <line nr="26" mi="5" ci="0" mb="0" cb="0"/>
+      <line nr="27" mi="7" ci="0" mb="0" cb="0"/>
+      <line nr="28" mi="7" ci="0" mb="0" cb="0"/>
+      <line nr="29" mi="7" ci="0" mb="0" cb="0"/>
+      <line nr="30" mi="7" ci="0" mb="0" cb="0"/>
+      <line nr="31" mi="7" ci="0" mb="0" cb="0"/>
+      <line nr="32" mi="5" ci="0" mb="0" cb="0"/>
+      <line nr="33" mi="5" ci="0" mb="0" cb="0"/>
+      <line nr="34" mi="5" ci="0" mb="0" cb="0"/>
+      <line nr="35" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="36" mi="8" ci="0" mb="0" cb="0"/>
+      <line nr="46" mi="8" ci="0" mb="0" cb="0"/>
+      <line nr="47" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="48" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="49" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="50" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="51" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="52" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="53" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="54" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="55" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="56" mi="5" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="139" covered="0"/>
+      <counter type="LINE" missed="24" covered="0"/>
+      <counter type="COMPLEXITY" missed="3" covered="0"/>
+      <counter type="METHOD" missed="3" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="139" covered="0"/>
+    <counter type="LINE" missed="24" covered="0"/>
+    <counter type="COMPLEXITY" missed="3" covered="0"/>
+    <counter type="METHOD" missed="3" covered="0"/>
+    <counter type="CLASS" missed="1" covered="0"/>
+  </package>
+  <counter type="INSTRUCTION" missed="29711" covered="231"/>
+  <counter type="BRANCH" missed="2259" covered="17"/>
+  <counter type="LINE" missed="4205" covered="42"/>
+  <counter type="COMPLEXITY" missed="3457" covered="29"/>
+  <counter type="METHOD" missed="2326" covered="22"/>
+  <counter type="CLASS" missed="244" covered="8"/>
+</report>

@@ -16,7 +16,9 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/hguerra/jacoco-check/internal"
+	"log"
+
+	"github.com/hguerra/jacoco-check/internal/validator"
 	"github.com/spf13/cobra"
 )
 
@@ -31,20 +33,66 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		internal.NewParser(cfg, args)
+		xmlReportPath, err := cmd.Flags().GetString("xml")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		filesChanged, err := cmd.Flags().GetStringSlice("files")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		coverageOverallCode, err := cmd.Flags().GetFloat32("coverage-overall-code")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		coverageNewCode, err := cmd.Flags().GetFloat32("coverage-new-code")
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		res, err := validator.Validate(xmlReportPath, filesChanged, coverageOverallCode, coverageNewCode)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		log.Println(res)
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(checkCmd)
 
-	// Here you will define your flags and configuration settings.
+	var minCodeCoverageOverall float32
+	var minCodeCoverageNewCode float32 = 0.8
 
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// checkCmd.PersistentFlags().String("foo", "", "A help for foo")
+	checkCmd.Flags().StringP(
+		"xml",
+		"x",
+		"",
+		"Jacoco XML report path",
+	)
 
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// checkCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	checkCmd.Flags().StringSliceP(
+		"files",
+		"f",
+		[]string{},
+		"Files changed in a pull request",
+	)
+
+	checkCmd.Flags().Float32P(
+		"coverage-overall-code",
+		"o",
+		minCodeCoverageOverall,
+		"Code coverage on overall code greater than 0% (where 0.0 represents 0%)",
+	)
+
+	checkCmd.Flags().Float32P(
+		"coverage-new-code",
+		"n",
+		minCodeCoverageNewCode,
+		"Code coverage on new code greater than 80% (where 0.8 represents 80%)",
+	)
 }
